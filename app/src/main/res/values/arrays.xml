@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="time_option_arr">time_option_arr</string-array>
+    <string-array name="val_arr">val_arr</string-array>
+    <string-array name="date_format_arr">date_format_arr</string-array>
+    <string-array name="date_range_arr">date_range_arr</string-array>
+</resources>

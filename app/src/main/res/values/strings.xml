@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MedProTest</string>
+    <string name="map_greeting">This is Map Activity!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_map">MapActivity</string>
+    <string name="title_activity_location">LocationActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_drug_search">DrugSearchActivity</string>
+    <string name="title_activity_custom__list">Custom_List</string>
+    <string name="title_activity_drug_search_item">DrugSearchItemActivity</string>
+    <string name="title_activity_reminder">ReminderActivity</string>
+    <string name="title_activity_view_phamarcy">ViewPhamarcyActivity</string>
+    <string name="title_activity_view_pharmacy">ViewPharmacy</string>
+    <string name="title_activity_single_place">SinglePlaceActivity</string>
+    <string name="title_activity_disease_search">DiseaseSearchActivity</string>
+    <string name="title_activity_general_search">GeneralSearchActivity</string>
+    <string name="title_activity_general_search_item">GeneralSearchItemActivity</string>
+    <string name="title_activity_disease_search_item">DiseaseSearchItemActivity</string>
+    <string name="title_activity_general_search_article_item">GeneralSearchArticleItemActivity</string>
+    <string name="reminder_prompt">Select Alarm Type</string>
+
+    <string-array name="alarm_types">
+        <item>One Time</item>
+        <item>Repeat</item>
+    </string-array>
+
+    <string name="title_activity_log">LogActivity</string>
+    <string name="title_activity_log_entry">LogEntryActivity</string>
+    <string name="title_activity_main_menu">MainMenuActivity</string>
+    <string name="title_activity_doctor_login">DoctorLoginActivity</string>
+    <string name="title_activity_pharmacy">PharmacyActivity</string>
+    <string name="title_activity_pharmacy_login">PharmacyLoginActivity</string>
+    <string name="title_activity_user_login">UserLoginActivity</string>
+
+</resources>

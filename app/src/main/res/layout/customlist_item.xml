@@ -1,0 +1,44 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="0dip" android:layout_gravity="top"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_marginTop="10dp"
+    >
+    <TableRow>
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            >
+            <ImageView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_gravity="left|top"
+                android:scaleType="centerCrop"
+                android:id="@+id/image"
+
+                />
+        </LinearLayout>
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_gravity="top"
+            >
+            <TableRow>
+                <TextView
+                    android:id="@+id/text"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center|center_horizontal"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginTop="6dip"
+                    android:textColor="#4DAAAB"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="The Musaeum"
+                    />
+            </TableRow>
+        </TableLayout>
+    </TableRow>
+</TableLayout>

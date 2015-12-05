@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchActivity"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Main Menu"
+        android:id="@+id/textView"
+        android:padding="10dp"
+        android:background="#E74C3C"
+        android:textColor="#CCC"
+        android:textSize="30sp"
+        android:fontFamily="sans-serif-thin"
+        android:gravity="center"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:src="@drawable/g4567"
+        android:layout_below="@+id/textView"
+        android:id="@+id/logo"
+        android:layout_marginRight="60dp"
+        android:layout_marginLeft="60dp"
+        />
+
+    <Button
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Drug Search"
+        android:id="@+id/drugSearch"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/logo"
+        android:fontFamily="sans-serif-light"
+        android:textStyle="bold"
+        android:textColor="#E74C3C"/>
+
+    <Button
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Disease Search"
+        android:id="@+id/DiseaseSearch"
+        android:layout_below="@+id/drugSearch"
+        android:fontFamily="sans-serif-light"
+        android:textStyle="bold"
+        android:textColor="#E74C3C" />
+
+    <Button
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GeneralSearch"
+        android:id="@+id/GeneralSearch"
+        android:layout_below="@+id/DiseaseSearch"
+        android:fontFamily="sans-serif-light"
+        android:textStyle="bold"
+        android:textColor="#E74C3C"
+        />
+
+    <Button
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Notification "
+        android:id="@+id/Reminder"
+        android:layout_below="@+id/GeneralSearch"
+        android:fontFamily="sans-serif-light"
+        android:textStyle="bold"
+        android:textColor="#E74C3C"/>
+    <Button
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LogBook"
+        android:id="@+id/LogBook"
+        android:layout_below="@+id/Reminder"
+        android:fontFamily="sans-serif-light"
+        android:textStyle="bold"
+        android:textColor="#E74C3C" />
+    <Button
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Connect with Doctors"
+        android:id="@+id/AddDoctor"
+        android:layout_below="@+id/LogBook"
+        android:fontFamily="sans-serif-light"
+        android:textStyle="bold"
+        android:textColor="#E74C3C" />
+
+    <TextView
+        android:text="Copyrights reserved MedPro © 2014"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/AddDoctor"
+        android:textColor="#aaa"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

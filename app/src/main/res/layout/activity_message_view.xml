@@ -1,0 +1,67 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.chaya.medprotest.MessageViewActivity">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:text="New Message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/msgViewTitle"
+            android:gravity="center"
+            android:textSize="17sp"
+            android:background="#e74c3c"
+            android:textColor="#fff"
+            android:padding="5dp"
+        />
+        <TextView
+            android:text="New Message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/msgViewBody"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:textColor="#555"
+        />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/msgViewImage"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+        />
+
+        <TextView
+            android:text="Reply From - Aruna Tebel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:id="@+id/msgViewDoc"
+            android:layout_marginTop="30dp"
+            android:padding="2dp"
+            android:background="#fff"
+            android:textColor="#999"
+            android:textSize="10sp"
+            android:textStyle="bold"
+        />
+
+
+        <TextView
+            android:text="New Message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/msgViewReply"
+            android:gravity="left"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginLeft="100dp"
+            android:textColor="#101010"
+        />
+
+    </TableLayout>
+</ScrollView>

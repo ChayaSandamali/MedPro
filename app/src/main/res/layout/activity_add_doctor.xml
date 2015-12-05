@@ -1,0 +1,211 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.chaya.medprotest.AddDoctor"
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:layout_height="match_parent">
+<TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3498db"
+        >
+        <TextView
+            android:text="Connect with your Doctor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:textColor="#fff"
+            android:layout_span="4"
+        />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="20dp"
+            android:text="Registered Doctors (Click to view details)"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_weight="1"
+            android:layout_span="4"
+            android:padding="10dp"
+            />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:id="@+id/registeredDoctorList"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/button"
+            android:layout_weight="1"
+            android:layout_span="4"
+            android:background="@drawable/abc_menu_dropdown_panel_holo_light"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="Doctor Details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:layout_span="4"
+            />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#3498db"
+        android:padding="5dp">
+        <TextView
+            android:text="Name"
+            android:id="@+id/docNameLabel"
+            android:textStyle="bold"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            android:textColor="#fff"
+        />
+        <TextView
+            android:text="Contact No."
+            android:id="@+id/docTelLabel"
+            android:textStyle="bold"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            android:textColor="#fff"
+        />
+        <TextView
+            android:text="Medical Center"
+            android:id="@+id/docMediCenterLabel"
+            android:textStyle="bold"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            android:textColor="#fff"
+        />
+        <TextView
+            android:text="Specialized Area"
+            android:id="@+id/docSpecializedLabel"
+            android:textStyle="bold"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            android:textColor="#fff"
+        />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:background="#e74c3c">
+        <TextView
+            android:id="@+id/docName"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            android:layout_height="60dp"
+            android:textColor="#fff"
+        />
+        <TextView
+            android:id="@+id/docTel"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            android:layout_height="60dp"
+            android:textColor="#fff"
+        />
+        <TextView
+            android:id="@+id/docMedicalCenter"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            android:layout_height="60dp"
+            android:textColor="#fff"
+        />
+        <TextView
+            android:id="@+id/docSpecialized"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            android:layout_height="60dp"
+            android:textColor="#fff"
+        />
+    </TableRow>
+
+    <TableRow
+        android:layout_weight="1"
+        android:weightSum="0.99"
+        android:layout_marginTop="10dp"
+    >
+        <Button
+            android:text="Subscribe to Doctor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/connectDoc"
+            android:layout_gravity="center"
+            android:layout_weight="0.33"
+            android:textSize="12sp"
+        />
+        <Button
+            android:text="Unsubscribe Doctor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/disconnectDoc"
+            android:layout_gravity="center"
+            android:layout_weight="0.33"
+            android:textSize="12sp"
+        />
+
+        <Button
+            android:text="Send a message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/messageDoc"
+            android:layout_gravity="center"
+            android:layout_weight="0.33"
+            android:textSize="12sp"
+        />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_span="4"
+            android:text="MESSAGES SENT BY YOU"
+            android:textColor="#e74c3c"
+            android:id="@+id/alreadyCon"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:textSize="16sp"
+        />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            android:id="@+id/messageList"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/button"
+            android:layout_weight="1"
+            android:layout_span="4"/>
+    </TableRow>
+
+</TableLayout>
+</ScrollView>

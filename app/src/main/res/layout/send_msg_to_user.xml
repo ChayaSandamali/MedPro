@@ -1,0 +1,49 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/abc_menu_dropdown_panel_holo_light">
+    <TableLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dialog_table"
+        android:padding="30dp"
+        >
+        <TableRow>
+            <TextView
+                android:text="Enter your message"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_span="2"
+                android:gravity="center"
+                android:background="#1E4F6A"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:textColor="#4DAAAB"
+                />
+        </TableRow>
+        <TableRow>
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/messageBody"
+                android:hint="Message body"
+                android:layout_weight="1"
+                android:layout_marginTop="20dp"
+                android:layout_span="2"
+                android:minLines="6"
+                />
+        </TableRow>
+        <TableRow>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Send"
+                android:id="@+id/sendReply"
+                android:layout_marginTop="20dp"
+                android:textColor="#4DAAAB"
+                android:layout_weight="1"/>
+        </TableRow>
+    </TableLayout>
+</ScrollView>

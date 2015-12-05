@@ -1,0 +1,157 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.chaya.medprotest.DoctorActivity">
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:background="#AAA"
+        android:padding="5dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Message Box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_span="4"
+            android:gravity="center"
+        />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:background="#CCC"
+        android:padding="5dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="ID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_weight="0.1"
+            android:gravity="center"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:text="Sender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_weight="0.125"
+            android:gravity="center"
+            android:textStyle="bold"
+        />
+        <TextView
+            android:text="Message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_weight="0.65"
+            android:gravity="center"
+            android:textStyle="bold"
+        />
+        <TextView
+            android:text="Sent Date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_weight="0.125"
+            android:gravity="center"
+            android:textStyle="bold"
+        />
+    </TableRow>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/msgScrollView">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/msgTable">
+
+        </TableLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:layout_height="450dp"
+    >
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+        >
+            <TableRow
+                android:layout_marginTop="30dp"
+                android:background="#5C71FA"
+            >
+                <TextView
+                    android:text=""
+                    android:layout_weight="1"
+                    android:layout_span="4"
+                    android:padding="10dp"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:id="@+id/msgTitle"
+                    android:layout_marginLeft="20dp"
+                />
+            </TableRow>
+
+            <TableRow
+                android:background="#EEE"
+            >
+                <TextView
+                    android:text=""
+                    android:layout_weight="1"
+                    android:layout_span="4"
+                    android:padding="10dp"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/msgBody"
+                    />
+            </TableRow>
+
+            <TableRow>
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_weight="1"
+                    android:layout_span="4"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:textSize="18sp"
+                    android:id="@+id/msgImage"
+                    />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_span="4"
+                    android:gravity="right"
+                    android:padding="10dp"
+                    android:textSize="18sp"
+                    android:id="@+id/msgDate"
+                    />
+            </TableRow>
+
+            <TableRow
+                android:gravity="right"
+            >
+                <Button
+                    android:text="Reply"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:id="@+id/reply"
+                    android:layout_marginRight="30dp"
+                    />
+            </TableRow>
+
+        </TableLayout>
+    </ScrollView>
+
+</TableLayout>

@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+   >
+<TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/staticTable">
+    <TableRow android:background="#1E4F6A">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log Entries"
+            android:id="@+id/textView"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:textColor="#EBFFE3"
+            android:layout_weight="0.8"
+            />
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="AddEntry"
+            android:textColor="#EBFFE3"
+            android:id="@+id/addEntryBtn"
+            android:layout_weight="0.2"
+        />
+    </TableRow>
+   </TableLayout>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentTop="true"
+    android:layout_marginTop="50dp"
+    >
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/parentTableLayout"
+        android:layout_marginTop="0dp">
+
+        <!--<TableRow>-->
+            <!--<EditText-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/EntryName"-->
+                <!--android:hint="Enter Entry Name"-->
+                <!--android:layout_alignParentTop="true"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_alignParentEnd="true"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_marginTop="20dp"/>-->
+        <!--</TableRow>-->
+        <!--<TableRow>-->
+            <!--<ImageView-->
+                <!--android:layout_width="200dp"-->
+                <!--android:layout_height="200dp"-->
+                <!--android:id="@+id/entry_image"-->
+                <!--android:layout_span="2"-->
+                <!--/>-->
+        <!--</TableRow>-->
+        <!--<TableRow>-->
+        <!--<Button-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Add Image"-->
+            <!--android:id="@+id/AddImageBtn"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:layout_weight="0.5"-->
+            <!--android:layout_marginRight="200dp"/>-->
+        <!--</TableRow>-->
+        <!--<TableRow>-->
+            <!--<EditText-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="200dp"-->
+                <!--android:id="@+id/entryDescription"-->
+                <!--android:hint="Enter Description"-->
+                <!--android:layout_alignParentTop="true"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_alignParentEnd="true"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_marginTop="20dp"-->
+                <!--android:layout_span="2"/>-->
+        <!--</TableRow>-->
+
+        <!--<TableRow>-->
+            <!--<Button-->
+                <!--android:layout_width="40dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Edit"-->
+                <!--android:id="@+id/editBtn"-->
+                <!--android:layout_marginTop="20dp"-->
+                <!--android:layout_weight="0.5"-->
+                <!--android:layout_marginRight="130dp"-->
+                <!--/>-->
+            <!--<Button-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Delete"-->
+                <!--android:id="@+id/deleteBtn"-->
+                <!--android:layout_marginTop="20dp"-->
+                <!--android:layout_weight="0.5"-->
+                <!--android:layout_marginLeft="-100dp"/>-->
+        <!--</TableRow>-->
+
+    </TableLayout>
+</ScrollView>
+</RelativeLayout>
+
